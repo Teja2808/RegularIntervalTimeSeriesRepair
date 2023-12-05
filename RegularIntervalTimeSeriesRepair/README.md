@@ -1,3 +1,4 @@
+
 ## README
 #### File Sturcture
 
@@ -35,10 +36,14 @@ Initially, the Main.java is set for energy dataset.
 To run the code for other datasets follow the below steps:
 
 - Open the Main.java file
-- go to line 60 and change the "energyParams.put("truthDir", "../data/energy")" to "energyParams.put("truthDir", "../data/**datasetname**")"
-- go to line 62 and change the "energyParams.put("originalDir", "../data/dirty_energy")" to "energyParams.put("originalDir", "../data/**dirty_datasetname**")"
-- go to line 67 and change the "parameters.put("energy", energyParams)" to "parameters.put("**datasetname**", energyParams)"
-- go to line 70 and change the "String[] datasets = {"energy"}" to "String[] datasets = {"**datasetname**"}"
+
+- go to line 60 and change the "energyParams.put("truthDir", "../data/energy")" to "energyParams.put("truthDir", "../data/`datasetname`")"
+
+- go to line 62 and change the "energyParams.put("originalDir", "../data/dirty_energy")" to "energyParams.put("originalDir", "../data/`dirty_datasetname`")"
+
+- go to line 67 and change the "parameters.put("energy", energyParams)" to "parameters.put(`datasetname`, energyParams)"
+
+- go to line 70 and change the "String[] datasets = {"energy"}" to "String[] datasets = {"`datasetname`"}"
 
 The results of the ran datasets will automatically moved to the results folder.
 
